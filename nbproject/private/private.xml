@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Test_CMD/src/java/PromenaBoja.java</file>
+            <file>file:/C:/Test_CMD/src/java/PisanjeCSVa.java</file>
+            <file>file:/C:/Test_CMD/src/java/Pokretanje.java</file>
+            <file>file:/C:/Test_CMD/src/java/Cmd.java</file>
+            <file>file:/C:/Test_CMD/src/java/datumi.java</file>
+            <file>file:/C:/Test_CMD/src/java/SortiranjeDatuma.java</file>
+            <file>file:/C:/Test_CMD/src/java/GenerisanjeCSVa.java</file>
+            <file>file:/C:/Test_CMD/src/java/servleti/show.java</file>
+            <file>file:/C:/Test_CMD/web/index.html</file>
+        </group>
     </open-files>
 </project-private>

@@ -10,10 +10,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import static java.lang.System.out;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javaKlase.pokretanje;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -84,12 +80,14 @@ public class show extends HttpServlet {
         String datum = "";
         String omiljenaBoja = "";
         //Odabir fajla koji se prikazuje na HTML strani
-        String fileName3 = System.getProperty("user.home") + "/boje_osobe.csv";
+        String csv = request.getParameter("upis");
+        String fileName3 = System.getProperty("user.home") + "/" + csv + ".csv";
         //Generisanje pocetnih tagova HTML strane i tabele
         out.write("<html>"
                 + "<body>"
-                +"<center>"
-                +"<h3>Generisana tabela CSV fajla</h3>"
+                + "<center>"
+                + "<h3>Generisana tabela CSV fajla pod nazivom <em>" + csv + "</h3>"
+                + "<br/>"
                 + "<table border ='2'>"
                 + "<tr>"
                 + "<td>Id</td>"

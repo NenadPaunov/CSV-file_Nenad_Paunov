@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="CSV_file_Nenad_Paunov" default="default" basedir=".">
-    <description>Builds, tests, and runs the project CSV file_Nenad_Paunov.</description>
+<project name="CSV_file_with_CMD" default="default" basedir=".">
+    <description>Builds, tests, and runs the project CSV_file_with_CMD.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
