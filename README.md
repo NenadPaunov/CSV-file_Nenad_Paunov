@@ -13,6 +13,6 @@ The program is receiving three arguments:
 
 3. HTML page which contains a table that displays the data from the output CSV file from the previous task.
 
-The color of the line (s) in the table is the color from the column "favorite color".
+The color of the lines in the table is the color from the column "favorite color".
 
   This program can be runned from CMD(Cmd class for running all methods at once or by selecting each class separately) or from main class Pokretanje in IDE.
