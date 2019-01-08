@@ -102,12 +102,14 @@ public class SortiranjeDatuma {
         //Sortiranje datuma preko cmd-a. Ukoliko je dato 2 argumenta tada se novi CSV fajl generise za 1000 osoba
         //, u suprotnom za broj ljudi koji je unesen kao argument.
         System.out.println("Sortiranje datuma");
-        if(args.length<3){
+        if(args.length==2){
         sortirajPoDatumima(System.getProperty("user.home") + "/"+args[0]+".csv",System.getProperty("user.home") + "/"+args[1]+".csv", null);
             System.out.println("Sortiran je i kreiran novi CSV fajl pod nazivom "+args[1]+" sa 1000 osoba");
     }
-        else{
+        if(args.length==3){
             sortirajPoDatumima(System.getProperty("user.home") + "/"+args[0]+".csv",System.getProperty("user.home") + "/"+args[1]+".csv", args[2]);
         System.out.println("Sortiran je i kreiran novi CSV fajl pod nazivom "+args[1]+" sa "+args[2]+" osoba");}
+        else
+            System.out.println("Niste uneli dovoljan broj argumenata");
     }
 }

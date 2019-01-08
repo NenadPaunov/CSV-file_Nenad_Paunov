@@ -71,8 +71,12 @@ public class PromenaBoja {
     }
     public static void main(String[] args) {
         //Promena boja preko cmd-a.
+        if(args.length==2){
         promeniBoje(System.getProperty("user.home") + "/"+args[0]+".csv", System.getProperty("user.home") + "/"+args[1]+".csv");
         System.out.println("Kreiran je novi fajl pod nazivom "+args[1]+" sa promenjenim omiljenim bojama u osnovne.");
     }
-
+        else{
+            System.out.println("Niste uneli dovoljan broj argumenata");
+        }
+    }
 }

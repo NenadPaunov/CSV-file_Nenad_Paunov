@@ -135,8 +135,14 @@ public static void generisanje(String fileName){
 }
     public static void main(String[] args) {
         //Generisanje CSV fajla.
+        if(args.length==1){
         String fileName1 = System.getProperty("user.home") + "/"+args[0]+".csv";
         generisanje(fileName1);
         System.out.println("Fajl uspesno kreiran pod nazivom "+args[0]);
     }
+        else{
+            System.out.println("Niste uneli naziv fajla za generisanje!");
+        }
+        
+            }
 }
