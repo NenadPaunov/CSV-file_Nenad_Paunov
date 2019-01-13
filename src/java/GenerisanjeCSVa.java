@@ -56,45 +56,25 @@ public static void generisanje(String fileName){
         file.append(prezimena[randomPrezime]);
         file.append(zarez);
         //Nasumicno biranje godine rodjenja, gde su meseci od 1 do 12, dan izabran shodno mesecu i nasumicna godina od 1950 do 2000
-        randomMeseci=random.nextInt(12)+1;
-        if(randomMeseci==1){
-            randomDani=random.nextInt(31)+1;
-        }
-        else if(randomMeseci==2){
-            randomDani=random.nextInt(28)+1;
-        }
-         else if(randomMeseci==3){
-            randomDani=random.nextInt(31)+1;
-        }
-         else if(randomMeseci==4){
-            randomDani=random.nextInt(30)+1;
-        }
-         else if(randomMeseci==5){
-            randomDani=random.nextInt(31)+1;
-        }
-         else if(randomMeseci==6){
-            randomDani=random.nextInt(30)+1;
-        }
-         else if(randomMeseci==7){
-            randomDani=random.nextInt(31)+1;
-        }
-         else if(randomMeseci==8){
-            randomDani=random.nextInt(31)+1;
-        }
-         else if(randomMeseci==9){
-            randomDani=random.nextInt(30)+1;
-        }
-         else if(randomMeseci==10){
-            randomDani=random.nextInt(31)+1;
-        }
-         else if(randomMeseci==11){
-            randomDani=random.nextInt(30)+1;
-        }
-         else {
-            randomDani=random.nextInt(31)+1;
-        }
         randomGodine=random.nextInt((2000-1950)+1)+1950;
-        
+        randomMeseci=random.nextInt(12)+1;       
+        if(randomMeseci==1||randomMeseci==3||randomMeseci==5||randomMeseci==7||randomMeseci==8
+                ||randomMeseci==10||randomMeseci==12){
+            randomDani=random.nextInt(31)+1;
+        }
+        else if(randomMeseci==4||randomMeseci==6||randomMeseci==9||randomMeseci==11){
+            randomDani=random.nextInt(30)+1;
+        }
+        else{
+            //Ukoliko godina nije prestupna
+             if(randomGodine%4!=0){
+            randomDani=random.nextInt(28)+1;}
+             else{
+                 //Ukoliko je prestupna godina
+                 randomDani=random.nextInt(29)+1;
+             }
+        }
+//       
         String mesec="0";
         String dan="0";
         

@@ -57,7 +57,9 @@ private String omiljenaBoja;
     public void setOmiljenaBoja(String omiljenaBoja) {
         this.omiljenaBoja = omiljenaBoja;
     }
-
+    public Osoba(){
+        
+    }
     public Osoba(int id, String ime, String prezime, LocalDate datumRodjenja, String omiljenaBoja) {
         this.id = id;
         this.ime = ime;

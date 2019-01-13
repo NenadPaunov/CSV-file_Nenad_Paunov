@@ -35,7 +35,7 @@ public class Pokretanje {
         //Ulazni fajl, broj osoba, izlazni fajl
         System.out.println("Sortiranje fajla po datumima:");
 
-        SortiranjeDatuma.sortirajPoDatumima(fileName1, fileName2,"10");
+        SortiranjeDatuma.sortirajPoDatumima(fileName1, fileName2,null);
 
         //Ulazni fajl, izlazni fajl
         System.out.println("Promena omiljenih boja:");
